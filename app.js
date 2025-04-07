@@ -2,6 +2,7 @@ const msgStore = document.getElementById('store')
 const startMenu = document.getElementById('menu')
 const answer = document.getElementById('answer')
 const option = document.getElementById('option')
+const audio = document.getElementById('telegram')
 const DIALOG_LIST = [
     {
         message: 'Hello! my name is Rukia Kuchiki, what is yours',
@@ -30,8 +31,7 @@ const createMessage = (msg)=>{
         <p>${msg}</p>
         <p>${formatted}</p>
     `
-
-
+    audio.play()
 }
 
 const startGame = () => {
@@ -64,6 +64,13 @@ const responseSystem = () => {
             }, 2500);
             answer.innerHTML = 'Yeah, you are Rukia Kuchiki'
         break;
+        case 'Yeah, you are Rukia Kuchiki':
+            createMessage('Wait! How do you know that?!')
+            answer.innerHTML = 'Well.. to be honest i am not from your world.'
+            break;
+        case 'Well.. to be honest i am not from your world.':
+            createMessage('Not from my world? Well this is pretty ironic lol, so what do you mean by "Not from my world"')
+            answer.innerHTML = 'NIGGER NIGGER NIGGER'
     }
 }
 
