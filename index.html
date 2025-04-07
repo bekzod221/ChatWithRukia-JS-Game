@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="phone_container">
+            <div class="menu" id="menu">
+                <h1>Chat with Rukia!</h1>
+                <p>it's a completely fan made game where you can interact with Rukia Kuchiki,<br> <b>made by An1ksyy</b></p>
+                <button onclick="startGame()">PLAY</button>
+            </div>
+            <div class="store" id="store">
+                <div class="sent" id="sent">
+                    <h3>Rukia</h3>
+                    <p>Hello! My name is Rukia Kuchiki, what's yours?</p>
+                    <p>20:50</p>
+                </div>
+                <form action="" onsubmit="createMessage(event)" class="sender">
+                   <div class="response" id="res">
+                    <div id="option" class="option">
+                        <h2 id="answer">My name is...</h2>
+                    </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
